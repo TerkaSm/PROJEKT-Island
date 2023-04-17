@@ -93,6 +93,8 @@ p {
 
 .menu {
 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 40px;
@@ -146,10 +148,11 @@ img {
 
 
 
-/* ------ Sekce Úvod ------ */
+		/* ------ Sekce Úvod ------ */
 
 .galery h2 {
 	margin-bottom: 30px;
+	color: black;
 }
 
 .galery img {
@@ -168,7 +171,7 @@ img {
 }
 
 
-/* ------ Sekce Patička ------ */
+		/* ------ Sekce Patička ------ */
 
 .footer {
 	background-image: linear-gradient(to bottom, rgb(165 161 161 / 54%), #f5f5f5 30%);
@@ -179,3 +182,87 @@ img {
 	text-align: left;
 	font-weight: 700;
 }
+
+
+
+
+/* ******  Tablet Version - 540px - 960px  ***** */
+
+@media screen and (min-width: 540px) {
+
+
+		/* ------ Hlavička ------ */
+
+	h1 {
+		font-size: 72px;
+	}
+
+	.header {
+		padding-top: 10px;
+	}
+
+
+		/* ------ Menu ------ */
+
+	.menu ul {
+		display: flex;
+	}
+
+	.menu li {
+		flex: 1 1 25%;
+		padding: 8px 0;
+		border-top: 1px solid rgba(128, 128, 128, 0.174);
+		border-bottom: 1px solid rgba(128, 128, 128, 0.174);
+		border-right: 1px solid rgba(128, 128, 128, 0.174);
+	}
+
+	.menu li:last-child {
+		border-right: 0;
+	}
+
+
+	
+		/* ------ Sekce Úvod ------ */
+
+	h2 {
+		font-size: 36px;
+	}
+
+	.section {
+		position: relative;
+	}
+
+	.copy {
+		color: #fff;
+		text-shadow: 1px 2px 3px #808080c1;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		bottom: 7px;
+		right: 15px;
+	}
+
+	.copy a {
+		color: #fff;
+		text-shadow: 1px 2px 3px #808080c1;
+	}
+
+	
+	/* ------ Sekce Fotogalerie ------ */
+
+	.galery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+	}
+
+	.galery img {
+		max-width: 100%;
+	}
+
+	.galery p {
+		display: none;
+	}
+}
+
+
